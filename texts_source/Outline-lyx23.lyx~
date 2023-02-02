@@ -1,0 +1,551 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Témata
+\end_layout
+
+\begin_layout Subsection
+Git
+\end_layout
+
+\begin_layout Subsection
+VSCode
+\end_layout
+
+\begin_layout Subsection
+Obecné návyky
+\end_layout
+
+\begin_layout Subsection
+Python
+\end_layout
+
+\begin_layout Subsection
+Práce se soubory
+\end_layout
+
+\begin_layout Subsection
+Knihovny pro vědecké výpočty
+\end_layout
+
+\begin_layout Subsection
+Profilování, optimalizace
+\end_layout
+
+\begin_layout Standard
+ladění, profilování
+\end_layout
+
+\begin_layout Standard
+Návyky • komentáře • správa verzí • DRY 
+\end_layout
+
+\begin_layout Standard
+Knihovny pro vědecké výpočty • numpy ◦ array, indexování, řezy, doplňování
+ ◦ vektorové operace • matplotlib • scipy, sympy
+\end_layout
+
+\begin_layout Standard
+Pokročilé • spolupráce s C
+\end_layout
+
+\begin_layout Section
+Harmonogram
+\end_layout
+
+\begin_layout Description
+1.
+\begin_inset space ~
+\end_inset
+
+týden Úvod
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+shrnutí kurzu
+\end_layout
+
+\begin_layout Itemize
+Python - proč, výhody, jak?
+\end_layout
+
+\begin_layout Itemize
+VSCode - přehled
+\end_layout
+
+\begin_layout Itemize
+Git - základy
+\end_layout
+
+\begin_layout Itemize
+pip
+\end_layout
+
+\begin_layout Itemize
+Jupyter
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Hello world!
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+2.
+\begin_inset space ~
+\end_inset
+
+týden Základy Pythonu
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+základní datové typy, 
+\end_layout
+
+\begin_layout Itemize
+kontejnery,
+\end_layout
+
+\begin_layout Itemize
+algebraické operace, 
+\end_layout
+
+\begin_layout Itemize
+základní funkce, 
+\end_layout
+
+\begin_layout Itemize
+měnitelné a neměnitelné typy,
+\end_layout
+
+\begin_layout Itemize
+řízení běhu programu, 
+\end_layout
+
+\begin_layout Itemize
+cykly,
+\end_layout
+
+\begin_layout Itemize
+funkce,
+\end_layout
+
+\begin_layout Itemize
+prostory jmen a obor platnosti proměnných,
+\end_layout
+
+\begin_layout Itemize
+balíky a moduly.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+3.
+\begin_inset space ~
+\end_inset
+
+týden Python - pokročilí, práce se soubory
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+třídy (OOP),
+\end_layout
+
+\begin_layout Itemize
+generátory a iterátory,
+\end_layout
+
+\begin_layout Itemize
+List comprehension,
+\end_layout
+
+\begin_layout Itemize
+Lambda funkce,
+\end_layout
+
+\begin_layout Itemize
+práce se soubory,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+csv,
+\end_layout
+
+\begin_layout Itemize
+json,
+\end_layout
+
+\begin_layout Itemize
+pickle,
+\end_layout
+
+\begin_layout Itemize
+hf5.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+4.
+\begin_inset space ~
+\end_inset
+
+týden Numpy,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+NumPy Array
+\end_layout
+
+\begin_layout Itemize
+NumPy Linear Algebra
+\end_layout
+
+\begin_layout Itemize
+indexing, slicing
+\end_layout
+
+\begin_layout Itemize
+Broadcasting
+\end_layout
+
+\end_deeper
+\begin_layout Description
+5.
+\begin_inset space ~
+\end_inset
+
+týden Matplotlib, Seaborne, Pandas
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Matplotlib
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Plotting basic charts
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Line plots 
+\end_layout
+
+\begin_layout Itemize
+Scatter plots 
+\end_layout
+
+\begin_layout Itemize
+Bar plots 
+\end_layout
+
+\begin_layout Itemize
+Histograms 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Customizing plots
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Titles, 
+\end_layout
+
+\begin_layout Itemize
+labels, 
+\end_layout
+
+\begin_layout Itemize
+legends Axes limits and scales 
+\end_layout
+
+\begin_layout Itemize
+Plot formatting and style 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Subplots and figures
+\end_layout
+
+\begin_layout Itemize
+Saving plots to file
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Seaborn 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Plotting with Seaborn
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pandas 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Reading and writing data
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Reading CSV files 
+\end_layout
+
+\begin_layout Itemize
+Reading Excel files 
+\end_layout
+
+\begin_layout Itemize
+Reading and writing data from/to databases 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Manipulating data with Pandas
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Indexing and selecting data 
+\end_layout
+
+\begin_layout Itemize
+Filtering and sorting data 
+\end_layout
+
+\begin_layout Itemize
+Grouping and aggregation 
+\end_layout
+
+\begin_layout Itemize
+Merging and joining datasets 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Visualizing data with Pandas
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+6.
+\begin_inset space ~
+\end_inset
+
+týden Scipy, Sympy
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Scipy 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sparse linear algebra
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Matrix operations 
+\end_layout
+
+\begin_layout Itemize
+Solving linear systems of equations 
+\end_layout
+
+\begin_layout Itemize
+Eigenvalues and eigenvectors 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Optimization
+\end_layout
+
+\begin_layout Itemize
+Interpolation
+\end_layout
+
+\begin_layout Itemize
+Integration 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Sympy 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Basics of symbolic mathematics
+\end_layout
+
+\begin_layout Itemize
+Symbolic expressions and variables 
+\end_layout
+
+\begin_layout Itemize
+Simplification of expressions 
+\end_layout
+
+\begin_layout Itemize
+Solving equations
+\end_layout
+
+\begin_layout Itemize
+Expressions into Python functions
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+7.
+\begin_inset space ~
+\end_inset
+
+týden Návyky, Dokumentace, Ladění, Testování
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+DRY,
+\end_layout
+
+\begin_layout Itemize
+Type hinting,
+\end_layout
+
+\begin_layout Itemize
+Docstring
+\end_layout
+
+\begin_layout Itemize
+Sphinx
+\end_layout
+
+\begin_layout Itemize
+Debugování,
+\end_layout
+
+\begin_layout Itemize
+UnitTesty
+\end_layout
+
+\end_deeper
+\begin_layout Description
+8.
+\begin_inset space ~
+\end_inset
+
+týden Profilování, optimalizace, PETSC4py
+\end_layout
+
+\begin_layout Description
+9.
+\begin_inset space ~
+\end_inset
+
+týden Paralelismus v Pythonu, linkování C
+\end_layout
+
+\end_body
+\end_document
