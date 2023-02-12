@@ -434,17 +434,21 @@ kontejnery,
 \end_layout
 
 \begin_layout Itemize
+měnitelné a neměnitelné typy,
+\end_layout
+
+\begin_layout Itemize
 algebraické operace,
  
 \end_layout
 
 \begin_layout Itemize
-základní funkce,
- 
+klíčová slova,
 \end_layout
 
 \begin_layout Itemize
-měnitelné a neměnitelné typy,
+základní funkce,
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -461,11 +465,7 @@ funkce,
 \end_layout
 
 \begin_layout Itemize
-prostory jmen a obor platnosti proměnných,
-\end_layout
-
-\begin_layout Itemize
-balíky a moduly.
+balíky a moduly,
 \end_layout
 
 \end_deeper
@@ -479,6 +479,10 @@ týden Python - pokročilé,
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+prostory jmen a obor platnosti proměnných,
+\end_layout
+
 \begin_layout Itemize
 třídy (OOP),
 \end_layout
@@ -846,5 +850,27 @@ linkování C kódu
 \end_layout
 
 \end_deeper
+\begin_layout Section
+TODO
+\end_layout
+
+\begin_layout Subsection
+lesson 1
+\end_layout
+
+\begin_layout Itemize
+slicing
+\end_layout
+
+\begin_layout Itemize
+komentáře
+\end_layout
+
+\begin_layout Itemize
+all,
+ any,
+ remove
+\end_layout
+
 \end_body
 \end_document

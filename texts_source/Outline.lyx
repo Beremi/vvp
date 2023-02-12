@@ -465,15 +465,7 @@ funkce,
 \end_layout
 
 \begin_layout Itemize
-prostory jmen a obor platnosti proměnných,
-\end_layout
-
-\begin_layout Itemize
 balíky a moduly,
-\end_layout
-
-\begin_layout Itemize
-Jupyter magics
 \end_layout
 
 \end_deeper
@@ -487,6 +479,10 @@ týden Python - pokročilé,
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+prostory jmen a obor platnosti proměnných,
+\end_layout
+
 \begin_layout Itemize
 třídy (OOP),
 \end_layout
@@ -504,27 +500,9 @@ Lambda funkce,
 \end_layout
 
 \begin_layout Itemize
-práce se soubory,
+základní práce se soubory,
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-csv,
-\end_layout
-
-\begin_layout Itemize
-json,
-\end_layout
-
-\begin_layout Itemize
-pickle,
-\end_layout
-
-\begin_layout Itemize
-hf5.
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Description
 4.
@@ -854,5 +832,49 @@ linkování C kódu
 \end_layout
 
 \end_deeper
+\begin_layout Description
+Zbytek 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+csv,
+\end_layout
+
+\begin_layout Itemize
+json,
+\end_layout
+
+\begin_layout Itemize
+pickle,
+\end_layout
+
+\begin_layout Itemize
+hf5.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+TODO
+\end_layout
+
+\begin_layout Subsection
+lesson 1
+\end_layout
+
+\begin_layout Itemize
+slicing
+\end_layout
+
+\begin_layout Itemize
+komentáře
+\end_layout
+
+\begin_layout Itemize
+all,
+ any,
+ remove
+\end_layout
+
 \end_body
 \end_document
