@@ -500,27 +500,9 @@ Lambda funkce,
 \end_layout
 
 \begin_layout Itemize
-práce se soubory,
+základní práce se soubory,
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-csv,
-\end_layout
-
-\begin_layout Itemize
-json,
-\end_layout
-
-\begin_layout Itemize
-pickle,
-\end_layout
-
-\begin_layout Itemize
-hf5.
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Description
 4.
@@ -847,6 +829,28 @@ Cython
 
 \begin_layout Itemize
 linkování C kódu
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Zbytek 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+csv,
+\end_layout
+
+\begin_layout Itemize
+json,
+\end_layout
+
+\begin_layout Itemize
+pickle,
+\end_layout
+
+\begin_layout Itemize
+hf5.
 \end_layout
 
 \end_deeper

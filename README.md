@@ -1,6 +1,6 @@
 # Toto je repozitář obsahující materiály k předmětu "Vědecké výpočty v Pythonu"
 
-Harmonogram, důležíté informace a deadliney naleznete na [LMS](https://lms.vsb.cz).
+Harmonogram, důležíté informace a deadliny naleznete na [LMS](https://lms.vsb.cz).
 
 **Tento repozitář můžete otevřít v Github Codespaces**.
 

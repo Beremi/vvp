@@ -10,5 +10,4 @@ sympy==1.11.1
 scipy==1.10.1
 seaborn==0.12.2
 cython==0.29.33
-petsc==3.18.4
-petsc4py==3.18.4
+scalene==1.5.13
