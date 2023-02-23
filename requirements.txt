@@ -9,5 +9,5 @@ numba==0.56.4
 sympy==1.11.1
 scipy==1.10.1
 seaborn==0.12.2
-cython==0.29.33
 scalene==1.5.13
+cython==0.29.33
