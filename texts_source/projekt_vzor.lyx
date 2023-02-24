@@ -1,0 +1,343 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 614
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children no
+\language czech
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008080
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style german
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Hledání nejkratší cesty v bludišti
+\end_layout
+
+\begin_layout Section
+Textový popis
+\end_layout
+
+\begin_layout Standard
+Tento projekt se zabývá řešením (hledáním nejkratší cesty) a také základním generováním bludišť.
+ Základním vstupem bude bludiště 
+\begin_inset Formula $n\times n$
+\end_inset
+
+,
+ přičemž vstup do bludiště bude vždy levý horní roh a výstup bude vždy pravý dolní roh.
+ Z jedné buňky do druhé se lze dostat pouze přes společnou hranu (nikoliv přes roh).
+ Cílem projektu je implementovat algoritmy pro načítání,
+ hledání nejkratší cesty a generování bludiště.
+\end_layout
+
+\begin_layout Standard
+Na začátku bude implementována funkce pro načítání bludiště z CSV souboru.
+ Tato funkce bude umět načítat bludiště o libovolném rozměru 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ a uložit ho do paměti v podobě NumPy matice s True/False hodnotami (True = buňka je neprůchozí).
+ Poté bude implementován algoritmus pro hledání nejkratší cesty.
+ Poslední částí bude vytvoření generátoru bludiště za použití algoritmu pro hledání nejkratší cesty.
+\end_layout
+
+\begin_layout Standard
+Výstup bude formou obrázku (černá = neprostupná část,
+ bílá = průchozí,
+ červená = nejkratší cesta).
+\end_layout
+
+\begin_layout Section
+Funcionality
+\end_layout
+
+\begin_layout Itemize
+Implementovat načítání bludiště z CSV souboru
+\end_layout
+
+\begin_layout Itemize
+Implementovat algoritmus pro hledání nejkratší cesty (mezi levým horním rohem a pravým dolním rohem) za použití knihovny NumPy,
+ který bude pracovat v následujících dvou krocích:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sestavení incidenční matice 
+\end_layout
+
+\begin_layout Itemize
+Hledání nejkratší cesty pomocí Dijkstrova algoritmu
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Zapsat bludiště a nalezenou cestu do černobílého obrázku,
+ kde cesta bude vyznačena červeně 
+\end_layout
+
+\begin_layout Itemize
+Vytvořit funkci pro generování bludiště tak,
+ aby mělo řešení (tj.
+ aby existovala cesta mezi levým horním a pravým dolním rohem) 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+funkce začne s nějakou šablonou (předdefinované v kódu) a poté bude zaplňovat bludiště v náhodných místech a kontrolovat,
+ zda je stále průchozí
+\end_layout
+
+\begin_layout Itemize
+šablon bude více (např.
+ empty = volné bludiště,
+ slalom = bariéry aby cesta musela minimálně mít tvar S,
+ ...) - budou s obrázky ukázané v Readme
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\start_of_appendix
+Další povinné části projektu společné pro všechny projekty
+\end_layout
+
+\begin_layout Itemize
+struktura projektu:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+složka s řešením = knihovnou
+\end_layout
+
+\begin_layout Itemize
+složka s testovacími daty
+\end_layout
+
+\begin_layout Itemize
+Jupyter notebook obsahující demonstraci funkcionalit/examples
+\end_layout
+
+\begin_layout Itemize
+Readme file obsahující popis projektu
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Dokumentace
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+type hinting - minimálně pro všechny funkce,
+ které jsou v tzv.
+ uživatelském rozhraní (uživatel je používá,
+ pokud používá knihovnu)
+\end_layout
+
+\begin_layout Itemize
+rozumné docstringy popisující chování fanných funkcí a tříd
+\end_layout
+
+\begin_layout Itemize
+názvy funkcí a tříd v souladu se zavedenou domluvou (snake_case,
+ ...)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Provedení
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+rozumné využití OOP (zde například,
+ objektem by mělo být samotné bludiště a funkce s ním pracující,
+ jeho metody)
+\end_layout
+
+\begin_layout Itemize
+rozumná délka funkcí - každá funkce má právě jednu zodpovědnost,
+ nekupit funkcionality
+\end_layout
+
+\begin_layout Itemize
+nekopírovat části kódu
+\end_layout
+
+\begin_layout Itemize
+nepoužívat tzv.
+ hardcoded konstanty
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Obecná náročnost projektu
+\end_layout
+
+\begin_layout Standard
+Projekt by měl obsahovat typově tyto části:
+\end_layout
+
+\begin_layout Itemize
+načítání zadání ze souboru
+\end_layout
+
+\begin_layout Itemize
+vykreslování řešení a jeho zapisování do souboru
+\end_layout
+
+\begin_layout Itemize
+řešení problému,
+ který není triviální
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+vyžaduje nějaký algoritmus (nemusí být nutně matematický nebo složitý)
+\end_layout
+
+\begin_layout Itemize
+ideálně více kroků v různých funkcích,
+ případně více různých funkcionalit
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Vzorová ukázka výstupu vzorového zadání projektu
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename maze.png
+	lyxscale 10
+	width 90col%
+	BoundingBox 0bp 60bp 1046bp 730bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ukázka vyřešeného bludiště
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
