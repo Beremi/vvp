@@ -1,3 +1,50 @@
 {
-    "notebook.globalToolbar": false
+  "editor.formatOnSave": true,
+  "git.autofetch": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "notebook.lineNumbers": "on",
+  "editor.inlineSuggest.enabled": true,
+  "css.lint.boxModel": "warning",
+  "jupyter.askForKernelRestart": false,
+  "git.confirmSync": false,
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    },
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "jupyter.showVariableViewWhenDebugging": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "files.autoSave": "afterDelay",
+  "flake8.args": [
+    "--max-line-length=200"
+  ],
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "githubPullRequests.createOnPublishBranch": "never",
+  "python.analysis.typeCheckingMode": "basic",
+  "breadcrumbs.enabled": false,
+  "editor.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "autopep8.args": [
+    "--max-line-length=120",
+    "--aggressive"
+  ],
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.colorCustomizations": {
+    "[Default Dark Modern]": {
+      "textPreformat.background": "#1f1f1f",
+      "textPreformat.foreground": "#E2BB6A",
+    }
+  },
+  "githubPullRequests.ignoredPullRequestBranches": [
+    "main"
+  ],
 }
