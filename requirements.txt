@@ -17,3 +17,4 @@ line-profiler
 jax
 jaxlib
 pytest
+mpi4py
