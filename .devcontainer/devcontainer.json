@@ -1,24 +1,25 @@
 {
-  "name": "VVP_docker",
-  "dockerFile": "Dockerfile",
-  "hostRequirements": {
-    "cpus": 2
-  },
-  "waitFor": "onCreateCommand",
-  "updateContentCommand": "python3 -m pip install -r requirements.txt",
-  "customizations": {
-    "codespaces": {
-      "openFiles": []
+    "name": "VVP_docker",
+    "dockerFile": "Dockerfile",
+    "hostRequirements": {
+        "cpus": 2
     },
-    "vscode": {
-      "extensions": [
-        "ms-toolsai.jupyter",
-        "ms-python.python",
-        "github.vscode-pull-request-github",
-        "ms-python.vscode-pylance",
-        "ms-python.flake8",
-        "ms-python.autopep8"
-      ]
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "",
+    "customizations": {
+        "codespaces": {
+            "openFiles": []
+        },
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "ms-python.python",
+                "github.vscode-pull-request-github",
+                "ms-python.vscode-pylance",
+                "ms-python.flake8",
+                "ms-python.autopep8",
+                "mhutchie.git-graph"
+            ]
+        }
     }
-  }
 }
