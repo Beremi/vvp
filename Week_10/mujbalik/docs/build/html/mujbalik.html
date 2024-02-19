@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="cz" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mujbalik package &mdash; Dokumentace pro mujbalik now</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Rejstřík" href="genindex.html" />
+    <link rel="search" title="Vyhledávání" href="search.html" />
+    <link rel="prev" title="mujbalik" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            mujbalik
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Obsah knihovny:</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">mujbalik package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-mujbalik">Module API</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mujbalik.Casopis"><code class="docutils literal notranslate"><span class="pre">Casopis</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mujbalik.Dite"><code class="docutils literal notranslate"><span class="pre">Dite</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mujbalik.Dospely"><code class="docutils literal notranslate"><span class="pre">Dospely</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mujbalik.Kniha"><code class="docutils literal notranslate"><span class="pre">Kniha</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mujbalik.Knihovna"><code class="docutils literal notranslate"><span class="pre">Knihovna</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mujbalik.knihovna">module mujbalik.knihovna</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mujbalik.knihovna.Knihovna"><code class="docutils literal notranslate"><span class="pre">Knihovna</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mujbalik.literatura">module mujbalik.literatura</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mujbalik.literatura.Casopis"><code class="docutils literal notranslate"><span class="pre">Casopis</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mujbalik.literatura.Kniha"><code class="docutils literal notranslate"><span class="pre">Kniha</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mujbalik.literatura.Literatura"><code class="docutils literal notranslate"><span class="pre">Literatura</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mujbalik.ucty">module mujbalik.ucty</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mujbalik.ucty.Ctenar"><code class="docutils literal notranslate"><span class="pre">Ctenar</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mujbalik.ucty.Dite"><code class="docutils literal notranslate"><span class="pre">Dite</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mujbalik.ucty.Dospely"><code class="docutils literal notranslate"><span class="pre">Dospely</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mujbalik</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">mujbalik</a></li>
+      <li class="breadcrumb-item active">mujbalik package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/mujbalik.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mujbalik-package">
+<h1>mujbalik package<a class="headerlink" href="#mujbalik-package" title="Permalink to this heading"></a></h1>
+<section id="module-mujbalik">
+<span id="module-api"></span><h2>Module API<a class="headerlink" href="#module-mujbalik" title="Permalink to this heading"></a></h2>
+<p>Toto je balíček mujbalik.</p>
+<p>Obsahuje moduly:
+- ucty - obsahuje třídy pro uživatele knihovny
+- knihovna - obsahuje třídu pro knihovnu
+- kniha - obsahuje třídy pro knihy a časopisy</p>
+<p>Pro uživatelské rozhraní použijte přímo třídy:
+- Dospely - reprezentuje dospělého čtenáře
+- Dite - reprezentuje dítě jako čtenáře (s omezením na výpůjčku)
+- Knihovna - reprezentuje knihovnu
+- Kniha - reprezentuje knihu jako typ literatury k výpůjčce
+- Casopis - reprezentuje časopis jako typ literatury k výpůjčce</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mujbalik.Casopis">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mujbalik.</span></span><span class="sig-name descname"><span class="pre">Casopis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nazev</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rok_vydani</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cislo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vhodna_pro_deti</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocet_vytisku</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.Casopis" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#mujbalik.literatura.Literatura" title="mujbalik.literatura.Literatura"><code class="xref py py-class docutils literal notranslate"><span class="pre">Literatura</span></code></a></p>
+<p>Třída reprezentující druh literatury - časopis.</p>
+<p>Dědí od třídy Literatura. Přidává vlastnost číslo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nazev</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>rok_vydani</strong> (<em>int</em>) -- </p></li>
+<li><p><strong>cislo</strong> (<em>int</em>) -- </p></li>
+<li><p><strong>vhodna_pro_deti</strong> (<em>bool</em>) -- </p></li>
+<li><p><strong>pocet_vytisku</strong> (<em>int</em>) -- </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mujbalik.Dite">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mujbalik.</span></span><span class="sig-name descname"><span class="pre">Dite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jmeno</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prijmeni</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctenar_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.Dite" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#mujbalik.ucty.Ctenar" title="mujbalik.ucty.Ctenar"><code class="xref py py-class docutils literal notranslate"><span class="pre">Ctenar</span></code></a></p>
+<p>Třída reprezentující dítě jako čtenáře.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>jmeno</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>prijmeni</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>ctenar_id</strong> (<em>int</em>) -- </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.Dite.preved_na_dospeleho">
+<span class="sig-name descname"><span class="pre">preved_na_dospeleho</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.Dite.preved_na_dospeleho" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Metoda pro převod dítěte na dospělého.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mujbalik.Dospely">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mujbalik.</span></span><span class="sig-name descname"><span class="pre">Dospely</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jmeno</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prijmeni</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctenar_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.Dospely" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#mujbalik.ucty.Ctenar" title="mujbalik.ucty.Ctenar"><code class="xref py py-class docutils literal notranslate"><span class="pre">Ctenar</span></code></a></p>
+<p>Třída reprezentující dospělého čtenáře.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>jmeno</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>prijmeni</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>ctenar_id</strong> (<em>int</em>) -- </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mujbalik.Kniha">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mujbalik.</span></span><span class="sig-name descname"><span class="pre">Kniha</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nazev</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rok_vydani</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vhodna_pro_deti</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocet_vytisku</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.Kniha" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#mujbalik.literatura.Literatura" title="mujbalik.literatura.Literatura"><code class="xref py py-class docutils literal notranslate"><span class="pre">Literatura</span></code></a></p>
+<p>Třída reprezentující druh knihy knihu.</p>
+<p>Dědí od třídy Literatura. Přidává vlastnost autor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nazev</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>autor</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>rok_vydani</strong> (<em>int</em>) -- </p></li>
+<li><p><strong>vhodna_pro_deti</strong> (<em>bool</em>) -- </p></li>
+<li><p><strong>pocet_vytisku</strong> (<em>int</em>) -- </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mujbalik.Knihovna">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mujbalik.</span></span><span class="sig-name descname"><span class="pre">Knihovna</span></span><a class="headerlink" href="#mujbalik.Knihovna" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Třída reprezentující knihovnu.</p>
+<p>Obsahuje seznam knih a čtenářů.
+Umožňuje přidávat knihy a čtenáře, vypůjčovat a vracet knihy.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.Knihovna.pridat_ctenare">
+<span class="sig-name descname"><span class="pre">pridat_ctenare</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctenar</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.Knihovna.pridat_ctenare" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Přidá čtenáře do seznamu čtenářů.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ctenar</strong> (<a class="reference internal" href="#mujbalik.ucty.Dospely" title="mujbalik.ucty.Dospely"><em>Dospely</em></a><em> | </em><a class="reference internal" href="#mujbalik.ucty.Dite" title="mujbalik.ucty.Dite"><em>Dite</em></a>) -- </p>
+</dd>
+<dt class="field-even">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.Knihovna.pridat_knihu">
+<span class="sig-name descname"><span class="pre">pridat_knihu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kniha</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.Knihovna.pridat_knihu" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Přidá knihu do seznamu knih.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>kniha</strong> (<a class="reference internal" href="#mujbalik.literatura.Kniha" title="mujbalik.literatura.Kniha"><em>Kniha</em></a><em> | </em><a class="reference internal" href="#mujbalik.literatura.Casopis" title="mujbalik.literatura.Casopis"><em>Casopis</em></a>) -- </p>
+</dd>
+<dt class="field-even">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.Knihovna.vratit_knihu">
+<span class="sig-name descname"><span class="pre">vratit_knihu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctenar_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kniha</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.Knihovna.vratit_knihu" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Vrátí knihu od čtenáře.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ctenar_id</strong> (<em>int</em>) -- </p></li>
+<li><p><strong>kniha</strong> (<a class="reference internal" href="#mujbalik.literatura.Kniha" title="mujbalik.literatura.Kniha"><em>Kniha</em></a><em> | </em><a class="reference internal" href="#mujbalik.literatura.Casopis" title="mujbalik.literatura.Casopis"><em>Casopis</em></a>) -- </p></li>
+</ul>
+</dd>
+<dt class="field-even">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.Knihovna.vypsat_ctenare">
+<span class="sig-name descname"><span class="pre">vypsat_ctenare</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.Knihovna.vypsat_ctenare" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Vypíše seznam čtenářů.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.Knihovna.vypsat_knihy">
+<span class="sig-name descname"><span class="pre">vypsat_knihy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.Knihovna.vypsat_knihy" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Vypíše seznam knih.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.Knihovna.vypsat_vypujcene_knihy">
+<span class="sig-name descname"><span class="pre">vypsat_vypujcene_knihy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.Knihovna.vypsat_vypujcene_knihy" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Vypíše seznam vypůjčených knih.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.Knihovna.vypujcit_knihu">
+<span class="sig-name descname"><span class="pre">vypujcit_knihu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctenar_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kniha</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.Knihovna.vypujcit_knihu" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Vypůjčí knihu čtenáři.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ctenar_id</strong> (<em>int</em>) -- </p></li>
+<li><p><strong>kniha</strong> (<a class="reference internal" href="#mujbalik.literatura.Kniha" title="mujbalik.literatura.Kniha"><em>Kniha</em></a><em> | </em><a class="reference internal" href="#mujbalik.literatura.Casopis" title="mujbalik.literatura.Casopis"><em>Casopis</em></a>) -- </p></li>
+</ul>
+</dd>
+<dt class="field-even">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-mujbalik.knihovna">
+<span id="module-mujbalik-knihovna"></span><h2>module mujbalik.knihovna<a class="headerlink" href="#module-mujbalik.knihovna" title="Permalink to this heading"></a></h2>
+<p>Modul pro definici Knihovny.</p>
+<p>Slouží k evidenci knih a čtenářů.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mujbalik.knihovna.Knihovna">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mujbalik.knihovna.</span></span><span class="sig-name descname"><span class="pre">Knihovna</span></span><a class="headerlink" href="#mujbalik.knihovna.Knihovna" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Třída reprezentující knihovnu.</p>
+<p>Obsahuje seznam knih a čtenářů.
+Umožňuje přidávat knihy a čtenáře, vypůjčovat a vracet knihy.</p>
+<dl class="field-list simple">
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.knihovna.Knihovna.pridat_ctenare">
+<span class="sig-name descname"><span class="pre">pridat_ctenare</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctenar</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.knihovna.Knihovna.pridat_ctenare" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Přidá čtenáře do seznamu čtenářů.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ctenar</strong> (<a class="reference internal" href="#mujbalik.ucty.Dospely" title="mujbalik.ucty.Dospely"><em>Dospely</em></a><em> | </em><a class="reference internal" href="#mujbalik.ucty.Dite" title="mujbalik.ucty.Dite"><em>Dite</em></a>) -- </p>
+</dd>
+<dt class="field-even">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.knihovna.Knihovna.pridat_knihu">
+<span class="sig-name descname"><span class="pre">pridat_knihu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kniha</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.knihovna.Knihovna.pridat_knihu" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Přidá knihu do seznamu knih.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>kniha</strong> (<a class="reference internal" href="#mujbalik.literatura.Kniha" title="mujbalik.literatura.Kniha"><em>Kniha</em></a><em> | </em><a class="reference internal" href="#mujbalik.literatura.Casopis" title="mujbalik.literatura.Casopis"><em>Casopis</em></a>) -- </p>
+</dd>
+<dt class="field-even">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.knihovna.Knihovna.vratit_knihu">
+<span class="sig-name descname"><span class="pre">vratit_knihu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctenar_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kniha</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.knihovna.Knihovna.vratit_knihu" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Vrátí knihu od čtenáře.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ctenar_id</strong> (<em>int</em>) -- </p></li>
+<li><p><strong>kniha</strong> (<a class="reference internal" href="#mujbalik.literatura.Kniha" title="mujbalik.literatura.Kniha"><em>Kniha</em></a><em> | </em><a class="reference internal" href="#mujbalik.literatura.Casopis" title="mujbalik.literatura.Casopis"><em>Casopis</em></a>) -- </p></li>
+</ul>
+</dd>
+<dt class="field-even">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.knihovna.Knihovna.vypsat_ctenare">
+<span class="sig-name descname"><span class="pre">vypsat_ctenare</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.knihovna.Knihovna.vypsat_ctenare" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Vypíše seznam čtenářů.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.knihovna.Knihovna.vypsat_knihy">
+<span class="sig-name descname"><span class="pre">vypsat_knihy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.knihovna.Knihovna.vypsat_knihy" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Vypíše seznam knih.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.knihovna.Knihovna.vypsat_vypujcene_knihy">
+<span class="sig-name descname"><span class="pre">vypsat_vypujcene_knihy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.knihovna.Knihovna.vypsat_vypujcene_knihy" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Vypíše seznam vypůjčených knih.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.knihovna.Knihovna.vypujcit_knihu">
+<span class="sig-name descname"><span class="pre">vypujcit_knihu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctenar_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kniha</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.knihovna.Knihovna.vypujcit_knihu" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Vypůjčí knihu čtenáři.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ctenar_id</strong> (<em>int</em>) -- </p></li>
+<li><p><strong>kniha</strong> (<a class="reference internal" href="#mujbalik.literatura.Kniha" title="mujbalik.literatura.Kniha"><em>Kniha</em></a><em> | </em><a class="reference internal" href="#mujbalik.literatura.Casopis" title="mujbalik.literatura.Casopis"><em>Casopis</em></a>) -- </p></li>
+</ul>
+</dd>
+<dt class="field-even">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-mujbalik.literatura">
+<span id="module-mujbalik-literatura"></span><h2>module mujbalik.literatura<a class="headerlink" href="#module-mujbalik.literatura" title="Permalink to this heading"></a></h2>
+<p>Modul pro definici objektů v knihovně.</p>
+<p>Obsahuje třídy Literatura, Kniha a Časopis.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mujbalik.literatura.Casopis">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mujbalik.literatura.</span></span><span class="sig-name descname"><span class="pre">Casopis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nazev</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rok_vydani</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cislo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vhodna_pro_deti</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocet_vytisku</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.literatura.Casopis" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#mujbalik.literatura.Literatura" title="mujbalik.literatura.Literatura"><code class="xref py py-class docutils literal notranslate"><span class="pre">Literatura</span></code></a></p>
+<p>Třída reprezentující druh literatury - časopis.</p>
+<p>Dědí od třídy Literatura. Přidává vlastnost číslo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nazev</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>rok_vydani</strong> (<em>int</em>) -- </p></li>
+<li><p><strong>cislo</strong> (<em>int</em>) -- </p></li>
+<li><p><strong>vhodna_pro_deti</strong> (<em>bool</em>) -- </p></li>
+<li><p><strong>pocet_vytisku</strong> (<em>int</em>) -- </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mujbalik.literatura.Kniha">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mujbalik.literatura.</span></span><span class="sig-name descname"><span class="pre">Kniha</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nazev</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rok_vydani</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vhodna_pro_deti</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocet_vytisku</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.literatura.Kniha" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#mujbalik.literatura.Literatura" title="mujbalik.literatura.Literatura"><code class="xref py py-class docutils literal notranslate"><span class="pre">Literatura</span></code></a></p>
+<p>Třída reprezentující druh knihy knihu.</p>
+<p>Dědí od třídy Literatura. Přidává vlastnost autor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nazev</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>autor</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>rok_vydani</strong> (<em>int</em>) -- </p></li>
+<li><p><strong>vhodna_pro_deti</strong> (<em>bool</em>) -- </p></li>
+<li><p><strong>pocet_vytisku</strong> (<em>int</em>) -- </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mujbalik.literatura.Literatura">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mujbalik.literatura.</span></span><span class="sig-name descname"><span class="pre">Literatura</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nazev</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rok_vydani</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vhodna_pro_deti</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pocet_vytisku</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.literatura.Literatura" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Třída reprezentující literaturu.</p>
+<p>Rodičovská třída pro knihu a časopis.
+Pokrývá všechny společné vlastnosti:
+název, rok vydání, počet výtisků,vhodnost pro děti, počet výpůjček.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nazev</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>rok_vydani</strong> (<em>int</em>) -- </p></li>
+<li><p><strong>vhodna_pro_deti</strong> (<em>bool</em>) -- </p></li>
+<li><p><strong>pocet_vytisku</strong> (<em>int</em>) -- </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.literatura.Literatura.vrat">
+<span class="sig-name descname"><span class="pre">vrat</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.literatura.Literatura.vrat" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Metoda pro vrácení knihy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.literatura.Literatura.vypujc">
+<span class="sig-name descname"><span class="pre">vypujc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.literatura.Literatura.vypujc" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Metoda pro výpůjčku knihy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Typ návratové hodnoty<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-mujbalik.ucty">
+<span id="module-mujbalik-ucty"></span><h2>module mujbalik.ucty<a class="headerlink" href="#module-mujbalik.ucty" title="Permalink to this heading"></a></h2>
+<p>Modul pro definici uživatelů knihovny.</p>
+<p>Obsahuje třídy Ctenar, Dospely a Dite.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mujbalik.ucty.Ctenar">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mujbalik.ucty.</span></span><span class="sig-name descname"><span class="pre">Ctenar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jmeno</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prijmeni</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctenar_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.ucty.Ctenar" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Třída reprezentující čtenáře.</p>
+<p>Rodičovská třída pro dospělého a dítěte.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>jmeno</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>prijmeni</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>ctenar_id</strong> (<em>int</em>) -- </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.ucty.Ctenar.vratit_knihu">
+<span class="sig-name descname"><span class="pre">vratit_knihu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kniha</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.ucty.Ctenar.vratit_knihu" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Metoda pro vrácení knihy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>kniha</strong> (<a class="reference internal" href="#mujbalik.literatura.Kniha" title="mujbalik.literatura.Kniha"><em>Kniha</em></a><em> | </em><a class="reference internal" href="#mujbalik.literatura.Casopis" title="mujbalik.literatura.Casopis"><em>Casopis</em></a>) -- </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.ucty.Ctenar.vypis_seznamu_vypujcenych_kusu">
+<span class="sig-name descname"><span class="pre">vypis_seznamu_vypujcenych_kusu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.ucty.Ctenar.vypis_seznamu_vypujcenych_kusu" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Metoda pro výpis seznamu vypůjčených kusů.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.ucty.Ctenar.vypujcit_knihu">
+<span class="sig-name descname"><span class="pre">vypujcit_knihu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kniha</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.ucty.Ctenar.vypujcit_knihu" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Metoda pro výpůjčku knihy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>kniha</strong> (<a class="reference internal" href="#mujbalik.literatura.Kniha" title="mujbalik.literatura.Kniha"><em>Kniha</em></a><em> | </em><a class="reference internal" href="#mujbalik.literatura.Casopis" title="mujbalik.literatura.Casopis"><em>Casopis</em></a>) -- </p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mujbalik.ucty.Dite">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mujbalik.ucty.</span></span><span class="sig-name descname"><span class="pre">Dite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jmeno</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prijmeni</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctenar_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.ucty.Dite" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#mujbalik.ucty.Ctenar" title="mujbalik.ucty.Ctenar"><code class="xref py py-class docutils literal notranslate"><span class="pre">Ctenar</span></code></a></p>
+<p>Třída reprezentující dítě jako čtenáře.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>jmeno</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>prijmeni</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>ctenar_id</strong> (<em>int</em>) -- </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="mujbalik.ucty.Dite.preved_na_dospeleho">
+<span class="sig-name descname"><span class="pre">preved_na_dospeleho</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.ucty.Dite.preved_na_dospeleho" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Metoda pro převod dítěte na dospělého.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mujbalik.ucty.Dospely">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mujbalik.ucty.</span></span><span class="sig-name descname"><span class="pre">Dospely</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jmeno</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prijmeni</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctenar_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mujbalik.ucty.Dospely" title="Trvalý odkaz na tuto definici"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#mujbalik.ucty.Ctenar" title="mujbalik.ucty.Ctenar"><code class="xref py py-class docutils literal notranslate"><span class="pre">Ctenar</span></code></a></p>
+<p>Třída reprezentující dospělého čtenáře.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametry<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>jmeno</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>prijmeni</strong> (<em>str</em>) -- </p></li>
+<li><p><strong>ctenar_id</strong> (<em>int</em>) -- </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="mujbalik" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, MB.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
