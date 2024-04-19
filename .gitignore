@@ -122,3 +122,6 @@ Week_10/__pycache__/auto.cpython-311.pyc
 Week_10/__pycache__/test_auto_pytest.cpython-311-pytest-8.1.1.pyc
 Week_10/mujbalik/__pycache__/test_mujbalik.cpython-311-pytest-8.1.1.pyc
 Week_10/mujbalik/__pycache__/test_mujbalik.cpython-311-pytest-8.1.1.pyc
+Week_10/auto_test.py
+Week_10/auto.py
+Week_10/test_auto_pytest.py
