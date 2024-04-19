@@ -25,7 +25,7 @@ extensions = [
 autodoc_typehints = 'description'
 
 templates_path = ['_templates']
-exclude_patterns = []
+exclude_patterns = []  # type: list
 
 language = 'cz'
 
