@@ -18,4 +18,4 @@ from .literatura import Kniha, Casopis
 from .ucty import Dospely, Dite
 from .knihovna import Knihovna
 
-__all__ = ["Kniha", "Casopis", "Dospely", "Dite", "Knihovna"]
+__all__: list[str] = ["Kniha", "Casopis", "Dospely", "Dite", "Knihovna"]

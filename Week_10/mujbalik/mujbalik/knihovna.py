@@ -32,11 +32,11 @@ class Knihovna:
 
     def vypujcit_knihu(self, ctenar_id: int, kniha: Kniha | Casopis) -> None:
         """Vypůjčí knihu čtenáři."""
-        ctenar = self._najit_ctenare(ctenar_id)
+        ctenar: Dospely | Dite | None = self._najit_ctenare(ctenar_id=ctenar_id)
         if not ctenar:
             raise ValueError("Čtenář neexistuje.")
 
-        kniha_v_knihovne = self._najit_knihu(kniha)
+        kniha_v_knihovne: Kniha | Casopis | None = self._najit_knihu(kniha=kniha)
         if not kniha_v_knihovne:
             raise ValueError("Kniha/časopis není v knihovně.")
 
@@ -45,20 +45,20 @@ class Knihovna:
             raise ValueError("Kniha/časopis není vhodná pro děti.")
 
         kniha_v_knihovne.vypujc()
-        ctenar.vypujcit_knihu(kniha_v_knihovne)
+        ctenar.vypujcit_knihu(kniha=kniha_v_knihovne)
 
     def vratit_knihu(self, ctenar_id: int, kniha: Kniha | Casopis) -> None:
         """Vrátí knihu od čtenáře."""
-        ctenar = self._najit_ctenare(ctenar_id)
+        ctenar: Dospely | Dite | None = self._najit_ctenare(ctenar_id=ctenar_id)
         if not ctenar:
             raise ValueError("Čtenář neexistuje.")
 
-        kniha_v_knihovne = self._najit_knihu(kniha)
+        kniha_v_knihovne: Kniha | Casopis | None = self._najit_knihu(kniha=kniha)
         if not kniha_v_knihovne:
             raise ValueError("Kniha/časopis není v knihovně.")
 
         kniha_v_knihovne.vrat()
-        ctenar.vratit_knihu(kniha_v_knihovne)
+        ctenar.vratit_knihu(kniha=kniha_v_knihovne)
 
     def _najit_ctenare(self, ctenar_id: int) -> Dospely | Dite | None:
         """Najde čtenáře podle ID."""
@@ -70,15 +70,13 @@ class Knihovna:
     def _najit_knihu(self, kniha: Kniha | Casopis) -> Kniha | Casopis | None:
         """Najde knihu dle názvu a roku vydání."""
         for kniha_v_knihovne in self.knihy:
-            if kniha_v_knihovne.nazev == kniha.nazev and \
-                    kniha_v_knihovne.rok_vydani == kniha.rok_vydani:
+            if kniha_v_knihovne.nazev == kniha.nazev and kniha_v_knihovne.rok_vydani == kniha.rok_vydani:
                 return kniha_v_knihovne
         return None
 
     def __str__(self) -> str:
         """Vrátí textovou reprezentaci objektu."""
-        return f"Knihovna obsahuje {len(self.knihy)} knih a\
-{len(self.ctenari)} čtenářů."
+        return f"Knihovna obsahuje {len(self.knihy)} knih a {len(self.ctenari)} čtenářů."
 
     def vypsat_knihy(self) -> None:
         """Vypíše seznam knih."""

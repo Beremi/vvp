@@ -18,10 +18,10 @@ class Literatura:
                  vhodna_pro_deti: bool = False,
                  pocet_vytisku: int = 1) -> None:
         """Konstruktor objektu."""
-        self.nazev = nazev
-        self.rok_vydani = rok_vydani
-        self.pocet_vytisku = pocet_vytisku
-        self.vhodna_pro_deti = vhodna_pro_deti
+        self.nazev: str = nazev
+        self.rok_vydani: int = rok_vydani
+        self.pocet_vytisku: int = pocet_vytisku
+        self.vhodna_pro_deti: bool = vhodna_pro_deti
         self.pocet_vypujcek = 0
 
     def vypujc(self) -> None:
@@ -48,15 +48,16 @@ class Kniha(Literatura):
 
     def __init__(self,  # pylint: disable=too-many-arguments
                  nazev: str, autor: str, rok_vydani: int,
-                 vhodna_pro_deti: bool = False, pocet_vytisku: int = 1):
+                 vhodna_pro_deti: bool = False, pocet_vytisku: int = 1) -> None:
         """Konstruktor objektu."""
-        super().__init__(nazev, rok_vydani, vhodna_pro_deti, pocet_vytisku)
-        self.autor = autor
+        super().__init__(nazev=nazev, rok_vydani=rok_vydani, vhodna_pro_deti=vhodna_pro_deti,
+                         pocet_vytisku=pocet_vytisku)
+        self.autor: str = autor
 
     def __str__(self) -> str:
         """Metoda pro převod objektu na řetězec."""
-        vypis = f"{self.nazev} od {self.autor} ({self.rok_vydani}), \
-kusů: {self.pocet_vytisku}, vypůjčeno: {self.pocet_vypujcek}"
+        vypis: str = f"{self.nazev} od {self.autor} ({self.rok_vydani}), kusů: {self.pocet_vytisku},"\
+                     f"vypůjčeno: {self.pocet_vypujcek}"
         if self.vhodna_pro_deti:
             vypis += " (vhodná pro děti)"
         return vypis
@@ -71,15 +72,16 @@ class Casopis(Literatura):
 
     def __init__(self,  # pylint: disable=too-many-arguments
                  nazev: str, rok_vydani: int, cislo: int,
-                 vhodna_pro_deti: bool = False, pocet_vytisku: int = 1):
+                 vhodna_pro_deti: bool = False, pocet_vytisku: int = 1) -> None:
         """Konstruktor objektu."""
-        super().__init__(nazev, rok_vydani, vhodna_pro_deti, pocet_vytisku)
-        self.cislo = cislo
+        super().__init__(nazev=nazev, rok_vydani=rok_vydani, vhodna_pro_deti=vhodna_pro_deti,
+                         pocet_vytisku=pocet_vytisku)
+        self.cislo: int = cislo
 
     def __str__(self) -> str:
         """Metoda pro převod objektu na řetězec."""
-        vypis = f"{self.nazev} ({self.rok_vydani}), číslo {self.cislo}, \
-kusů: {self.pocet_vytisku}, vypůjčeno: {self.pocet_vypujcek}"
+        vypis: str = f"{self.nazev} ({self.rok_vydani}), číslo {self.cislo}, kusů: {self.pocet_vytisku},"\
+                     f"vypůjčeno: {self.pocet_vypujcek}"
         if self.vhodna_pro_deti:
             vypis += " (vhodná pro děti)"
         return vypis
