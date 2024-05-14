@@ -74,13 +74,24 @@ bool pridali_jsme_neco(bool *newly_reachable, int n_vertices)
     return false;
 }
 
-void reachable_in_n_steps(int *edges, int M, int n, bool *reachable)
+void prepis_masku_do_indexu(bool *mask, int *index, int n)
+{
+    int aktualni_pozice = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (mask[i])
+            index[aktualni_pozice++] = i;
+    }
+}
+
+void reachable_in_n_steps(int *edges, int M, int n, int *reachable_vertices)
 {
     int n_vertices = najdi_maximum(edges, M * 2) + 1;
 
     int *edges_index_sousedu = (int *)calloc(n_vertices + 1, sizeof(int));
     int *edges_sousede = (int *)calloc(2 * M, sizeof(int));
 
+    bool *reachable = (bool *)calloc(n_vertices, sizeof(bool));
     bool *newly_reachable = (bool *)calloc(n_vertices, sizeof(bool));
     bool *next_reachable = (bool *)calloc(n_vertices, sizeof(bool));
 
@@ -109,8 +120,11 @@ void reachable_in_n_steps(int *edges, int M, int n, bool *reachable)
             break;
     }
 
+    prepis_masku_do_indexu(reachable, reachable_vertices, n_vertices);
+
     free(edges_index_sousedu);
     free(edges_sousede);
     free(newly_reachable);
     free(next_reachable);
+    free(reachable);
 }
