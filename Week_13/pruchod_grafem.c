@@ -14,12 +14,14 @@ int najdi_maximum(int *edges, int M)
     return max;
 }
 
-void spocti_sousedy_a_vyrob_index(int *edges, int M, int *edges_index_sousedu, int n_vertices)
+void spocti_sousedy_a_vyrob_index(int *edges, int M, int *edges_index_sousedu, int *pocet_sousedu, int n_vertices)
 {
     for (int i = 0; i < M * 2; i++)
     {
         edges_index_sousedu[edges[i] + 1]++;
     }
+
+    memcpy(pocet_sousedu, edges_index_sousedu + 1, n_vertices * sizeof(int));
 
     for (int i = 1; i <= n_vertices; i++)
     {
@@ -27,7 +29,7 @@ void spocti_sousedy_a_vyrob_index(int *edges, int M, int *edges_index_sousedu, i
     }
 }
 
-void vyrob_edges_sousede(int *edges, int M, int *edges_sousede, int *edges_index_sousedu, int n_vertices)
+void vyrob_edges_sousede(int *edges, int M, int *edges_sousede, int *edges_index_sousedu, int **sousedi_list_of_lists, int n_vertices)
 {
     int *edges_tmp_index = (int *)calloc((n_vertices + 1), sizeof(int));
     memcpy(edges_tmp_index, edges_index_sousedu, (n_vertices + 1) * sizeof(int));
@@ -38,9 +40,14 @@ void vyrob_edges_sousede(int *edges, int M, int *edges_sousede, int *edges_index
         edges_sousede[edges_tmp_index[edges[i + M]]++] = edges[i];
     }
     free(edges_tmp_index);
+
+    for (int i = 0; i < n_vertices; i++)
+    {
+        sousedi_list_of_lists[i] = edges_sousede + edges_index_sousedu[i];
+    }
 }
 
-void zkopiruj_sousedy(bool *next_reachable, int *sousedi, int N)
+void pridej_sousedy(bool *next_reachable, int *sousedi, int N)
 {
     for (int i = 0; i < N; i++)
     {
@@ -91,14 +98,16 @@ void reachable_in_n_steps(int *edges, int M, int n, int *reachable_vertices)
     int *edges_index_sousedu = (int *)calloc(n_vertices + 1, sizeof(int));
     int *edges_sousede = (int *)calloc(2 * M, sizeof(int));
 
+    int **sousedi_list_of_lists = (int **)calloc(n_vertices, sizeof(int *));
+    int *pocet_sousedu = (int *)calloc(n_vertices, sizeof(int));
+
     bool *reachable = (bool *)calloc(n_vertices, sizeof(bool));
     bool *newly_reachable = (bool *)calloc(n_vertices, sizeof(bool));
     bool *next_reachable = (bool *)calloc(n_vertices, sizeof(bool));
 
-    spocti_sousedy_a_vyrob_index(edges, M, edges_index_sousedu, n_vertices);
-    vyrob_edges_sousede(edges, M, edges_sousede, edges_index_sousedu, n_vertices);
+    spocti_sousedy_a_vyrob_index(edges, M, edges_index_sousedu, pocet_sousedu, n_vertices);
+    vyrob_edges_sousede(edges, M, edges_sousede, edges_index_sousedu, sousedi_list_of_lists, n_vertices);
 
-    memset(reachable, 0, n_vertices * sizeof(bool));
     reachable[0] = true;
     newly_reachable[0] = true;
 
@@ -109,7 +118,7 @@ void reachable_in_n_steps(int *edges, int M, int n, int *reachable_vertices)
         {
             if (newly_reachable[v])
             {
-                zkopiruj_sousedy(next_reachable, edges_sousede + edges_index_sousedu[v], edges_index_sousedu[v + 1] - edges_index_sousedu[v]);
+                pridej_sousedy(next_reachable, sousedi_list_of_lists[v], pocet_sousedu[v]);
             }
         }
 
@@ -126,5 +135,7 @@ void reachable_in_n_steps(int *edges, int M, int n, int *reachable_vertices)
     free(edges_sousede);
     free(newly_reachable);
     free(next_reachable);
+    free(sousedi_list_of_lists);
+    free(pocet_sousedu);
     free(reachable);
 }

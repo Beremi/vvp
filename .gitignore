@@ -140,3 +140,7 @@ Week_11/my_dot.pyx
 Week_11/setup.py
 Week_11/test.py
 Week_11/vysledky_cProfile_code_setup.prof
+Week_13/build/lib.linux-x86_64-cpython-312/mvc_mylib.cpython-312-x86_64-linux-gnu.so
+Week_13/build/lib.linux-x86_64-cpython-312/mvp_cy.cpython-312-x86_64-linux-gnu.so
+Week_13/build/temp.linux-x86_64-cpython-312/mvc_mylib.o
+Week_13/build/temp.linux-x86_64-cpython-312/mvp_cy.o
