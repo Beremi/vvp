@@ -1,7 +1,7 @@
-FROM python:3.11-slim
+FROM python:3.13-slim
 
 # Install ffmpeg
 RUN apt-get update && apt-get install -y ffmpeg git gcc
 RUN pip install --upgrade pip
-RUN apt-get install -y python3-pip python3-numpy python3-matplotlib python3-scipy python3-sympy python3-numba cython3 python3-mpi4py python3-h5py git python3-line-profiler python3-scalene python3-numexpr python3-ipykernel python3-pandas python3-seaborn python3-pytest python3-mypy python3-cffi
-RUN pip install --upgrade ipympl ipywidgets opencv-python jax jaxlib
+RUN apt-get install -y dvipng texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-latex-recommended texlive-lang-european python3-pip git python3-mpi4py graphviz
+RUN pip install --upgrade ipympl ipywidgets opencv-python jax jaxlib h5py ipykernel sympy pandas seaborn numpy matplotlib scipy sympy numba h5py line-profiler scalene numexpr ipykernel pandas seaborn pytest mypy cffi sphinx cython setuptools networkx graphviz

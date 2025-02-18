@@ -20,6 +20,5 @@
                 "ms-python.autopep8",
                 "mhutchie.git-graph"
             ]
-        }
-    }
+        }   }
 }
