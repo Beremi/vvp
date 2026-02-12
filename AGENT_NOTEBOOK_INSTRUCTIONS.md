@@ -51,6 +51,8 @@ Cíl je držet výklad věcný, lidský, stylisticky jednotný a obsahově pravd
 - Při komentování chyb rozlišuj formulace `záměrná výuková chyba` a `nezáměrná chyba`.
 - Hloubku nadpisů lze upravit podle čitelnosti; hlavní kapitoly čísluj podle osnovy notebooku.
 - U notebooků s jedním hlavním tématem a více rovnocennými sekcemi (např. typy operátorů) je vhodné používat číslované podnadpisy, aby nezůstala jen izolovaná kapitola `# 1`.
+- Při zkracování výkladu zachovej věcnou přesnost; nepoužívej formulace, které by mohly být zavádějící.
+- V ukázkách kódu používej srozumitelné názvy proměnných a drž jejich konzistenci mezi navazujícími buňkami.
 
 ## 7. Výstupní kontrola před odevzdáním
 - Zkontroluj, že jsi prošel všechny notebooky dané lekce (`XXa_...`, `XXb_...`, ... `XX_ukoly`) a přeskočil `DUX` notebooky.
@@ -80,3 +82,4 @@ Tuto sekci agent průběžně aktualizuje. Každá nová uživatelská oprava m�
 | 2026-02-12 | Upřesnění uživatele při revizi `Week_02`                              | U notebooků s kódovými buňkami se pokusit spouštět kód buňku po buňce i tehdy, když kód nebyl upraven. | Všechny notebooky s kódovými buňkami. |
 | 2026-02-12 | Upřesnění uživatele k nadpisům v `Week_02/02a_promenne_a_typy.ipynb`  | Hloubku nadpisů lze upravit podle čitelnosti; hlavní kapitoly číslovat podle osnovy notebooku. | Všechny výkladové notebooky.          |
 | 2026-02-12 | Upřesnění uživatele k číslování `Week_02/02b_operatory.ipynb`         | U notebooků s jedním hlavním tématem číslovat i rovnocenné podsekce (např. `1.1`, `1.2`), aby struktura nebyla jen na úrovni `# 1`. | Všechny výkladové notebooky.          |
+| 2026-02-12 | Upřesnění uživatele při revizi `Week_03`                              | Držet výklad kompaktní, ale věcně přesný; zavádějící formulace přepisovat i bez rozšíření tématu. V ukázkách používat srozumitelné a konzistentní názvy proměnných. | Všechny výkladové notebooky a ukázky kódu. |
