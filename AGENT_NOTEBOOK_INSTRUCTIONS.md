@@ -12,7 +12,7 @@ Cíl je držet výklad věcný, lidský, stylisticky jednotný a obsahově pravd
 5. Před úpravou konkrétního notebooku ověř návaznost na předchozí a následující notebooky stejného týdne.
 6. Zkontroluj, že tvrzení odpovídají skutečnému obsahu kurzu v repozitáři.
 7. Uprav text tak, aby byl stručný, přirozený a bez výplně.
-8. Pokud upravuješ kódové buňky, spusť notebook po změně buňku po buňce v logickém pořadí.
+8. U notebooků s kódovými buňkami se pokus notebook spustit buňku po buňce v logickém pořadí i tehdy, když kódové buňky neupravuješ.
 9. Pokud běh spadne na chybě, ověř kontext: rozliš záměrnou výukovou chybu od nezáměrné chyby.
 10. Po úpravě vždy projdi `git diff` oproti poslednímu commitu a zkontroluj konzistenci stylu.
 11. Pokud uživatel během chatu opraví termín, formulaci nebo pravidlo, převeď to na obecné pravidlo a zapiš ho do sekce `6. Terminologie a jazykové preference` a `8. Trvalé poznámky`.
@@ -20,8 +20,10 @@ Cíl je držet výklad věcný, lidský, stylisticky jednotný a obsahově pravd
 ## 3. Styl a struktura výkladu
 - Používej přirozený jazyk. Nepoužívej syntetické štítky typu `Definice.` a `Kontext.`, pokud to uživatel výslovně nevyžádá.
 - Drž jednotnou terminologii; po zavedení termínu používej stejný tvar.
-- Čísluj jen hlavní kapitoly (`# 1. ...`, `# 2. ...`).
-- Podnadpisy nečísluj (`## ...`), použij je jen když má část více samostatných bodů.
+- Čísluj hlavní kapitoly (`# 1. ...`, `# 2. ...`) tak, aby odpovídaly osnově notebooku.
+- Hloubku podnadpisů (`##`, `###`) můžeš upravit podle čitelnosti; není nutné držet původní hierarchii.
+- Podnadpisy standardně nečísluj (`## ...`, `### ...`), použij je jen když má část více samostatných bodů.
+- Pokud má notebook jedno hlavní téma a více rovnocenných bloků, je vhodné podnadpisy číslovat konzistentně (`## 1.1 ...`, `## 1.2 ...`, případně `### 1.2.1 ...`).
 - Piš krátké aktivní věty. Odstraň redundance a výplň.
 - Výčty piš odrážkami, postupy piš jako kroky v logickém pořadí.
 - Dodržuj tok výkladu: motivace a kontext, postup, příklad, stručné shrnutí.
@@ -47,14 +49,17 @@ Cíl je držet výklad věcný, lidský, stylisticky jednotný a obsahově pravd
 - Kde to pomůže čitelnosti, může být český termín doplněn anglickým ekvivalentem v závorce, např. `odeslání (push)`.
 - Formulaci `terminálový ekvivalent` používej jen tam, kde je ekvivalence skutečná; jinak popiš GUI krok samostatně.
 - Při komentování chyb rozlišuj formulace `záměrná výuková chyba` a `nezáměrná chyba`.
+- Hloubku nadpisů lze upravit podle čitelnosti; hlavní kapitoly čísluj podle osnovy notebooku.
+- U notebooků s jedním hlavním tématem a více rovnocennými sekcemi (např. typy operátorů) je vhodné používat číslované podnadpisy, aby nezůstala jen izolovaná kapitola `# 1`.
 
 ## 7. Výstupní kontrola před odevzdáním
 - Zkontroluj, že jsi prošel všechny notebooky dané lekce (`XXa_...`, `XXb_...`, ... `XX_ukoly`) a přeskočil `DUX` notebooky.
-- Zkontroluj, že hlavní kapitoly jsou číslované a podnadpisy nejsou číslované.
+- Zkontroluj, že hlavní kapitoly jsou číslované a hierarchie nadpisů je konzistentní (nemusí kopírovat původní hloubku).
+- Pokud notebook používá číslované podnadpisy (`1.1`, `1.2`, ...), zkontroluj, že číslování pokrývá rovnocenné části a není nahodilé.
 - Zkontroluj, že nejsou použité zakázané nebo nevhodné formulace ze sekce 6.
 - Zkontroluj, že každý uvedený příkaz je v kódovém bloku se správným jazykovým tagem.
 - Zkontroluj, že označení `terminálový ekvivalent` je použito jen u skutečně ekvivalentních kroků.
-- Pokud byly měněny kódové buňky, zkontroluj jejich běh buňku po buňce a vyhodnoť případné chyby podle kontextu výkladu.
+- U notebooků s kódovými buňkami se pokus ověřit běh buňku po buňce i bez změny kódu a vyhodnoť případné chyby podle kontextu výkladu.
 - Zkontroluj, že nebyly změněny jiné soubory mimo cílové notebooky (pokud to nebylo nutné kvůli explicitní vazbě ve výkladu).
 - Zkontroluj, že text působí přirozeně a není přeformalizovaný.
 - Zkontroluj `git diff`, zda úpravy nepřidaly zbytečný balast.
@@ -72,3 +77,6 @@ Tuto sekci agent průběžně aktualizuje. Každá nová uživatelská oprava m�
 | 2026-02-12 | Korekce uživatele k notebooku `Week_01/01c_VSCode_Jupyter.ipynb`      | Neuvádět „terminálový ekvivalent“, pokud nejde o stejnou operaci; u GUI kroků bez CLI obdoby ekvivalent nepsat. | Všechny výkladové notebooky.          |
 | 2026-02-12 | Korekce uživatele k běhu kódových buněk                               | Při změně kódových buněk notebook spouštět buňku po buňce; při pádu rozlišit záměrnou výukovou chybu a nezáměrnou chybu. | Všechny notebooky s kódovými buňkami. |
 | 2026-02-12 | Korekce uživatele k rozsahu průchodu lekce                            | Vždy projít celou lekci v týdnu (`XXa...` až `XX_ukoly`), ignorovat `DUX` notebooky a nesahat na další soubory bez nutné explicitní vazby. | Všechny týdenní složky.               |
+| 2026-02-12 | Upřesnění uživatele při revizi `Week_02`                              | U notebooků s kódovými buňkami se pokusit spouštět kód buňku po buňce i tehdy, když kód nebyl upraven. | Všechny notebooky s kódovými buňkami. |
+| 2026-02-12 | Upřesnění uživatele k nadpisům v `Week_02/02a_promenne_a_typy.ipynb`  | Hloubku nadpisů lze upravit podle čitelnosti; hlavní kapitoly číslovat podle osnovy notebooku. | Všechny výkladové notebooky.          |
+| 2026-02-12 | Upřesnění uživatele k číslování `Week_02/02b_operatory.ipynb`         | U notebooků s jedním hlavním tématem číslovat i rovnocenné podsekce (např. `1.1`, `1.2`), aby struktura nebyla jen na úrovni `# 1`. | Všechny výkladové notebooky.          |
