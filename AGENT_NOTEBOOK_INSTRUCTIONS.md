@@ -53,6 +53,8 @@ Cíl je držet výklad věcný, lidský, stylisticky jednotný a obsahově pravd
 - U notebooků s jedním hlavním tématem a více rovnocennými sekcemi (např. typy operátorů) je vhodné používat číslované podnadpisy, aby nezůstala jen izolovaná kapitola `# 1`.
 - Při zkracování výkladu zachovej věcnou přesnost; nepoužívej formulace, které by mohly být zavádějící.
 - V ukázkách kódu používej srozumitelné názvy proměnných a drž jejich konzistenci mezi navazujícími buňkami.
+- Nepřidávej fallback kód pro chybějící balíčky nebo toolchain; když buňka padá kvůli prostředí, oprav prostředí a zachovej přímý výukový kód.
+- V notebookových shell příkazech preferuj přímé volání přes `!` (např. `!python ...`); nepoužívej tvar `!{sys.executable} ...`.
 
 ## 7. Výstupní kontrola před odevzdáním
 - Zkontroluj, že jsi prošel všechny notebooky dané lekce (`XXa_...`, `XXb_...`, ... `XX_ukoly`) a přeskočil `DUX` notebooky.
@@ -83,3 +85,5 @@ Tuto sekci agent průběžně aktualizuje. Každá nová uživatelská oprava m�
 | 2026-02-12 | Upřesnění uživatele k nadpisům v `Week_02/02a_promenne_a_typy.ipynb`  | Hloubku nadpisů lze upravit podle čitelnosti; hlavní kapitoly číslovat podle osnovy notebooku. | Všechny výkladové notebooky.          |
 | 2026-02-12 | Upřesnění uživatele k číslování `Week_02/02b_operatory.ipynb`         | U notebooků s jedním hlavním tématem číslovat i rovnocenné podsekce (např. `1.1`, `1.2`), aby struktura nebyla jen na úrovni `# 1`. | Všechny výkladové notebooky.          |
 | 2026-02-12 | Upřesnění uživatele při revizi `Week_03`                              | Držet výklad kompaktní, ale věcně přesný; zavádějící formulace přepisovat i bez rozšíření tématu. V ukázkách používat srozumitelné a konzistentní názvy proměnných. | Všechny výkladové notebooky a ukázky kódu. |
+| 2026-02-12 | Upřesnění uživatele při revizi `Week_11`                              | Nepoužívat fallback kód pro chybějící balíčky v učebních noteboocích; chyby prostředí řešit konfigurací prostředí (venv/devcontainer), ne obcházením výkladu. | Všechny notebooky s externími závislostmi. |
+| 2026-02-13 | Upřesnění uživatele ke stylu shell příkazů v noteboocích              | V kódových buňkách používat přímé shell volání přes `!` (např. `!python ...`), ne `!{sys.executable} ...`. | Všechny notebooky s terminálovými příkazy. |

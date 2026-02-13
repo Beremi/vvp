@@ -5,12 +5,18 @@
         "cpus": 2
     },
     "waitFor": "onCreateCommand",
-    "updateContentCommand": "",
+    "onCreateCommand": "bash .devcontainer/setup-venv.sh",
+    "updateContentCommand": "bash .devcontainer/setup-venv.sh",
     "customizations": {
         "codespaces": {
             "openFiles": []
         },
         "vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python",
+                "python.terminal.activateEnvironment": true,
+                "jupyter.jupyterServerType": "local"
+            },
             "extensions": [
                 "ms-toolsai.jupyter",
                 "ms-python.python",
@@ -20,5 +26,6 @@
                 "ms-python.autopep8",
                 "mhutchie.git-graph"
             ]
-        }   }
+        }
+    }
 }
