@@ -3,6 +3,9 @@ IPython
 ipywidgets
 ipympl
 jupyter
+jupyterlab
+notebook
+nbconvert
 matplotlib
 numpy
 scipy
@@ -15,6 +18,7 @@ numba
 cython
 setuptools
 cffi
+mpi4py
 line_profiler
 snakeviz
 scalene
