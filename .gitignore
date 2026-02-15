@@ -150,3 +150,11 @@ Week_13/mvp_cy.c
 Week_10/__pycache__/
 Week_10/mujbalik/mujbalik/__pycache__/
 .gitignore
+Week_03/mocniny.csv
+Week_03/test.txt
+Week_05/ascii_data_1_new.txt
+Week_05/ascii_data_1.txt
+Week_05/ascii_data_2_new.txt
+Week_05/binary_data_1_new.npy
+Week_05/test_hdf5.h5
+Week_07/customized_plot.png
